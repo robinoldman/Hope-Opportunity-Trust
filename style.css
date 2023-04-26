@@ -121,10 +121,80 @@ content p{
     letter-spacing: 1.2px;
 
 }
-display: flex;
+display: 
+    
+    
+   
+    
+    
+
+    .wrapper {
+        padding: 0;
+        margin: 0;
+        border: 1px solid orange;
+        position: absolute;
+        width: 80vw;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+        display: flex;
+        flex-direction: row;
+        flex-basis: auto
+        flex-wrap: wrap; /* add this line */
+    }
+
+.container-school {
+    width: 28vmin;
+    height: 28vmin;
+    border: 1px solid orange;
+    display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    overflow: hidden;
-    margin: 0;
+    justify-content: space-around;
+    padding: 1em;
+    position: relative;
+    font-size: 16px;
+    border-radius: 0.5em;
+    background-color: #21242b;
+    border-bottom: 10px solid #18f98f;
+
+}
+
+i{ 
+    color: #18f98f;
+    font-size: 2.5em;
+    text-align:center
+}
+
+span.num{
+    color:#fff;
+    display:grid;
+    place-items: center;
+    font-weight: 600;
+    font-size: 3em;
+}
+
+span.text {
+    color: #e0e0e0;
+    font-size: 1em;
+    text-align: center;
+    padding: 0.7em 0;
+    font-weight: 400;
+    line-height: 0;
+
+}
+
+@media screen and (max-width: 1024px){
+    .wrapper {
+        width:85vw;
+    }
+    .container-school {
+        height:26vmin;
+        width:26vim;
+        font-size: 12px;
+    }
+}
+
+
+    
+
+
