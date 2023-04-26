@@ -121,27 +121,31 @@ content p{
     letter-spacing: 1.2px;
 
 }
-display: 
-    
-    
-   
-    
-    
 
-    .wrapper {
-        padding: 0;
-        margin: 0;
-        border: 1px solid orange;
-        position: absolute;
-        width: 80vw;
-        transform: translate(-50%, -50%);
-        top: 50%;
-        left: 50%;
-        display: flex;
-        flex-direction: row;
-        flex-basis: auto
-        flex-wrap: wrap; /* add this line */
-    }
+    
+   .wrapper {
+display: flex;
+flex-direction: row;
+justify-content: center;
+   }
+
+/*.wrapper {
+    padding: 0;
+    margin: 0;
+    border: 1px solid orange;
+    position: absolute;
+    top: -100px;
+    width: 80vw;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    } */
 
 .container-school {
     width: 28vmin;
