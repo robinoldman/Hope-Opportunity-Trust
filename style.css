@@ -163,19 +163,18 @@ content p{
     position: relative;
     font-size: 16px;
     border-radius: 0.5em;
-    background-color: #848482;
-    border-bottom: 10px solid #728FCE;
-
+    background-color: #393939;
+    border-bottom: 10px solid #3CEC71;
 }
 
 i{ 
-    color: #728FCE;
+    color: #3CEC71;
     font-size: 2.5em;
-    text-align:center
+    text-align:center;
 }
 
 span.num{
-    color:#fff;
+    color:whitesmoke;
     display:grid;
     place-items: center;
     font-weight: 600;
