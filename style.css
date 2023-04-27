@@ -123,10 +123,14 @@ content p{
 }
 
     
-   .wrapper {
-display: flex;
-flex-direction: row;
-justify-content: center;
+.wrapper {
+    border: 1px solid orange;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 80vw;
+    transform: translate(-50%, -50%);
    }
 
 /*.wrapper {
