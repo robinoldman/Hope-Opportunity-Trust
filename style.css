@@ -65,6 +65,8 @@ body {
 
 }
 
+#student {background-image: url('./images/hero3.jpg');}
+
 .nav.active a {
     color: #000;
 }
@@ -230,7 +232,7 @@ span.text {
 }
  /*-------------------cards for students*/
 
- .container-students{
+ .container_students{
     display:flex;
     width:90vw;
 
