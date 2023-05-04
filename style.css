@@ -253,6 +253,16 @@ span.text {
     transition: flex 0.7s ease-in;   
  }
 
+ .panel h4{
+    font-size: 15px ;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    margin: 0;
+    opacity: 0;
+
+ }
+
  .panel h3{
     font-size: 24px ;
     position: absolute;
@@ -264,12 +274,18 @@ span.text {
 
 .panel.active{
     flex:5;
-    transition: opacity 0.3s;
+    transition: opacity 0.3s ease-in 0.4s;
 }
 
 .panel.active h3{
     opacity: 1;
 }
+
+
+.panel.active h4{
+    opacity: 1;
+}
+
 
 
 @media (max-width: 480px){
