@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: Lato,  sans-serif;
     padding-bottom: 50px;
     margin: 0;
    
@@ -15,7 +15,10 @@ body {
 
 
 
-
+.writing-container{
+    font-family: Lato;
+    font-size: 5px;
+}
 
     
 
@@ -520,3 +523,9 @@ span.text {
   .arrow i {
     transform: rotate(180deg)}
 
+/*-------------------pupil stories */
+
+.img-fluid
+{
+   border-radius: 10px; 
+}
