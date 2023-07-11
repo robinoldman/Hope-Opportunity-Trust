@@ -375,6 +375,91 @@ span.text {
 }
 
 }
+/*-----------------4 panets on home page*/
+.placeholder img {
+    width: 200px;
+    height: 200px;
+  }
+
+  
+.image-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 75%; 
+    overflow: hidden;
+  }
+
+  .image-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+.menu-image{
+    width: 100%;
+    height:100%
+}
+
+.overlay-content{
+    font-size: 3vh;
+    
+}
+
+
+.overlay
+{display: flex;
+    justify-content: center; 
+    align-items: center; }
+.brand {
+    font-family: Lato, sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #4A4A4F;
+}
+
+.red-o {
+    color: #E84610;
+}
+
+.thin {
+    font-weight: 300;
+}
+
+.light-bg {
+    background-color: #fff;
+}
+
+.dark-bg {
+    background-color: #445261;
+}
+
+.main-bg {
+    background-color: #F9FAFC;
+}
+
+.card {
+    border: none;
+    background-color: transparent;
+}
+
+.image-container {
+    position: relative;
+}
+
+
+.overlay-content{
+    font-size: 3vh;
+    
+}
+
+
+.overlay
+{display: flex;
+    justify-content: center; 
+    align-items: center; }
 
  /*-------------------slider for schools*/
 
