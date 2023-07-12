@@ -260,12 +260,21 @@ span.text {
 
  }
 
+ .student-title{
+    margin-top: auto;
+ }
+
  .panel{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 200px; /* Set the desired height for the container */
   }
+
+  .button-card{
+    opacity: 1;
+    z-index: 3;
+}
 
 .button-card.active{
     opacity: 1;
@@ -305,14 +314,14 @@ span.text {
  }
 
  .panel h3{
-    font-size: 26px ;
+    font-size: 40px ;
     position: absolute;
     bottom: 20px;
     left: 15px;
     right: 15px;
     margin: 0;
     opacity: 0;
-    z-index: 1;
+    z-index: 3;
     padding: 20px;
     overflow: active;
     text-align: justify;
@@ -333,6 +342,7 @@ span.text {
     background-color: rgba(0,0,0,0.5);
     border-radius: 50px;
     z-index: 2;
+    opacity: 1;
 
     
 }
@@ -346,7 +356,9 @@ span.text {
     z-index: 3;
 }
 
-
+.panel:hover .overlay {
+    opacity: 1;
+  }
 
 @media (max-width: 480px){
     .container_students{
@@ -362,7 +374,7 @@ span.text {
 
 @media (max-width: 1100px){
     .panel h3{
-        font-size: 18px ;
+         
         padding: 10px;}
     .panel h4{
             font-size: 14px ;
