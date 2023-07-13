@@ -39,7 +39,7 @@ body {
     left:0;
     right:0;
     transition: all .3s ease-in-out;
-    z-index: 1;
+    z-index: 4;
 
 }
 
@@ -271,15 +271,17 @@ span.text {
     height: 200px; /* Set the desired height for the container */
   }
 
-  .button-card{
-    opacity: 1;
+  .button-card {
+    visibility: hidden;
     z-index: 3;
-}
+  }
+  
+  .panel.active .button-card{
+    visibility: visible;
+    z-index: 3;
+  }
 
-.button-card.active{
-    opacity: 1;
-    z-index: 3;
-}
+
 
 .panel {
     background-size: cover;
@@ -294,6 +296,7 @@ span.text {
     position: relative;
     transition: flex 0.7s ease-in;
     overflow: hidden;
+    
        
  }
 
