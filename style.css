@@ -18,9 +18,15 @@ body {
 
 .writing-container{
     font-family: Lato;
-    font-size: 5px;
+   
+    margin-top: 30px;
 }
+ 
 
+.writing-container h1 {
+    margin-bottom: 40px;
+    text-align: center;
+}
     
 
     
@@ -590,10 +596,3 @@ span.text {
    border-radius: 10px; 
 }
 
-.ambitions{
-    font-size: 8px;
-}
-
-.writing-container{
-    font-size: 2px;
-}
