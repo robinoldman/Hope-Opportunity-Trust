@@ -28,7 +28,19 @@ body {
     text-align: center;
 }
     
+.picture-container1{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
 
+.picture-div{
+    
+    position: relative;
+  
+}
     
 .container_content {
     max-width: 1200px;
