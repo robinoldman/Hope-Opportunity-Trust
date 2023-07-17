@@ -1,34 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans');
 
-*{
+* {
     box-sizing: border-box;
 }
 
 body {
-    font-family: Lato,  sans-serif;
+    font-family: Lato, sans-serif;
     padding-bottom: 50px;
     margin: 0;
-    padding-top: 60px; /* Adjust this value to create enough space for the navigation bar */
-   
+    padding-top: 60px;
+    /* Adjust this value to create enough space for the navigation bar */
+
 }
 
 /*------------------hero*/
 
 
 
-.writing-container{
+.writing-container {
     font-family: Lato;
-   
+
     margin-top: 30px;
 }
- 
+
 
 .writing-container h1 {
     margin-bottom: 40px;
     text-align: center;
 }
-    
-.picture-container1{
+
+.picture-container1 {
     margin: 0;
     position: absolute;
     top: 50%;
@@ -36,12 +37,12 @@ body {
     transform: translateY(-50%);
 }
 
-.picture-div{
-    
+.picture-div {
+
     position: relative;
-  
+
 }
-    
+
 .container_content {
     max-width: 1200px;
     margin: 0 auto;
@@ -49,12 +50,13 @@ body {
     left: 10px;
     right: 10px;
 
-    
+
 }
 
-.video{
+.video {
     display: flex;
-    align-items: center; /* Vertically center the content */
+    align-items: center;
+    /* Vertically center the content */
     justify-content: center;
 }
 
@@ -63,8 +65,8 @@ body {
     background-color: #222;
     font-size: 15px;
     top: 0;
-    left:0;
-    right:0;
+    left: 0;
+    right: 0;
     transition: all .3s ease-in-out;
     z-index: 4;
 
@@ -86,8 +88,8 @@ body {
     justify-content: center;
 }
 
-.nav a.current, .nav a:hover
-{
+.nav a.current,
+.nav a:hover {
     color: red;
     font-weight: bold;
 }
@@ -95,7 +97,7 @@ body {
 .nav a {
     color: #fff;
     text-decoration: none;
-    padding: 3px 10px ;
+    padding: 3px 10px;
     transition: all 0.3s ease-in-out;
 }
 
@@ -109,7 +111,9 @@ body {
 
 }
 
-#student {background-image: url('./images/hero3.jpg');}
+#student {
+    background-image: url('./images/hero3.jpg');
+}
 
 .nav.active a {
     color: #000;
@@ -140,11 +144,11 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0, 0, 0, 0.4);
     z-index: -1;
 }
 
-.hero h1{
+.hero h1 {
     font-size: 46px;
     margin: -20px 0 20px;
 }
@@ -154,21 +158,22 @@ body {
     letter-spacing: 1px;
 }
 
-.content h2, content h3{
+.content h2,
+content h3 {
 
     font-size: 150%;
     margin: 20px 0;
 
 }
 
-content p{
+content p {
     color: #555;
     line-height: 30px;
     letter-spacing: 1.2px;
 
 }
 
-    
+
 .wrapper {
     border: 1px solid white;
     display: flex;
@@ -177,11 +182,13 @@ content p{
     align-items: center;
     gap: 15px;
     width: 80vw;
-    margin: 0 auto; /* add this rule */
-    padding-top: 50px; /* add desired padding value */
+    margin: 0 auto;
+    /* add this rule */
+    padding-top: 50px;
+    /* add desired padding value */
     padding-bottom: 50px;
-    
-   }
+
+}
 
 /*.wrapper {
     padding: 0;
@@ -204,7 +211,7 @@ content p{
 .container-school {
     width: 28vmin;
     height: 28vmin;
-    
+
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -216,15 +223,15 @@ content p{
     border-bottom: 10px solid #56C0FF;
 }
 
-i{ 
+i {
     color: #56C0FF;
     font-size: 2.5em;
-    text-align:center;
+    text-align: center;
 }
 
-span.num{
-    color:whitesmoke;
-    display:grid;
+span.num {
+    color: whitesmoke;
+    display: grid;
     place-items: center;
     font-weight: 600;
     font-size: 3em;
@@ -240,73 +247,78 @@ span.text {
 
 }
 
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1024px) {
     .wrapper {
-        width:85vw;
+        width: 85vw;
     }
+
     .container-school {
-        height:26vmin;
-        width:26vim;
+        height: 26vmin;
+        width: 26vim;
         font-size: 12px;
     }
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
     .wrapper {
-        width:90vw;
+        width: 90vw;
         flex-wrap: wrap;
         gap: 30px;
     }
+
     .container-school {
-        height:30vmin;
-        width:calc(50% - 40px);
+        height: 30vmin;
+        width: calc(50% - 40px);
         font-size: 14px;
     }
 }
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 480px) {
     .wrapper {
         gap: 15px;
     }
+
     .container-school {
         height: 25vmin;
         width: 100%;
         font-size: 8px;
     }
 }
- /*-------------------cards for students*/
 
- .container_students{
-    display:flex;
-   
+/*-------------------cards for students*/
+
+.container_students {
+    display: flex;
+
     background-position: center;
-    
+
     justify-content: center;
     align-items: center;
-   
 
- }
 
- .student-title{
+}
+
+.student-title {
     margin-top: auto;
- }
+}
 
- .panel{
+.panel {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 200px; /* Set the desired height for the container */
-  }
+    height: 200px;
+    /* Set the desired height for the container */
+}
 
-  .button-card {
+.button-card {
     visibility: hidden;
     z-index: 3;
-  }
-  
-  .panel.active .button-card{
+}
+
+.panel.active .button-card {
     visibility: visible;
     z-index: 3;
-  }
+}
 
 
 
@@ -316,19 +328,19 @@ span.text {
     background-repeat: no-repeat;
     height: 80vh;
     border-radius: 50px;
-    color:#fff;
+    color: #fff;
     cursor: pointer;
     flex: 0.5;
     margin: 10px;
     position: relative;
     transition: flex 0.7s ease-in;
     overflow: hidden;
-    
-       
- }
 
- .panel h4{
-    font-size: 20px ;
+
+}
+
+.panel h4 {
+    font-size: 20px;
     position: absolute;
     top: 20px;
     left: 15px;
@@ -339,12 +351,12 @@ span.text {
     padding: 20px;
     overflow: active;
     text-align: justify;
-    
 
- }
 
- .panel h3{
-    font-size: 40px ;
+}
+
+.panel h3 {
+    font-size: 40px;
     position: absolute;
     bottom: 20px;
     left: 15px;
@@ -355,144 +367,155 @@ span.text {
     padding: 20px;
     overflow: active;
     text-align: justify;
-    
+
 }
 
-.panel.active{
-    flex:5;
+.panel.active {
+    flex: 5;
     transition: opacity 0.3s ease-in 0.4s;
 }
 
-.panel.active .overlay { /* show overlay only when panel has the "active" class */
+.panel.active .overlay {
+    /* show overlay only when panel has the "active" class */
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     border-radius: 50px;
     z-index: 2;
     opacity: 1;
 
-    
+
 }
-.panel.active h3{
+
+.panel.active h3 {
     opacity: 1;
 }
 
 
-.panel.active h4{
+.panel.active h4 {
     opacity: 1;
     z-index: 3;
 }
 
 .panel:hover .overlay {
     opacity: 1;
-  }
+}
 
-@media (max-width: 480px){
-    .container_students{
+@media (max-width: 480px) {
+    .container_students {
         width: 100vw;
     }
 
     .panel:nth-of-type(4),
-    .panel:nth-of-type(5){
+    .panel:nth-of-type(5) {
 
-    display: none;
+        display: none;
     }
 }
 
-@media (max-width: 1100px){
-    .panel h3{
-         
-        padding: 10px;}
-    .panel h4{
-            font-size: 14px ;
-            padding: 10px;
-}
+@media (max-width: 1100px) {
+    .panel h3 {
+
+        padding: 10px;
+    }
+
+    .panel h4 {
+        font-size: 14px;
+        padding: 10px;
+    }
 
 }
-    
 
-@media (max-width: 445px){
-    .panel h3{
-        font-size: 15px ;
-        padding: 5px;}
-    .panel h4{
-            font-size: 12px ;
-            padding: 5px;
-}
-.panel {
-    height: 100vh;
-}
+
+@media (max-width: 445px) {
+    .panel h3 {
+        font-size: 15px;
+        padding: 5px;
+    }
+
+    .panel h4 {
+        font-size: 12px;
+        padding: 5px;
+    }
+
+    .panel {
+        height: 100vh;
+    }
 
 }
+
 /*-----------------4 panets on home page*/
 .placeholder img {
     width: 200px;
     height: 200px;
-  }
+}
 
-  
+
 .image-container {
     position: relative;
     width: 100%;
-    padding-bottom: 75%; 
+    padding-bottom: 75%;
     overflow: hidden;
-  }
+}
 
-  .image-container img {
+.image-container img {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
-  }
+}
 
-.menu-image{
+.menu-image {
     width: 100%;
-    height:100%
+    height: 100%
 }
 
 .image-container {
     position: relative;
     display: inline-block;
-  }
-  
-  .overlay {
+}
+
+.overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.3); /* Adjust the opacity (last value) to control the darkness of the overlay */
+    background-color: rgba(0, 0, 0, 0.3);
+    /* Adjust the opacity (last value) to control the darkness of the overlay */
     z-index: 1;
     display: flex;
     align-items: center;
     justify-content: center;
     opacity: 0;
     transition: opacity 0.3s ease;
-  }
-  
-  .image-container:hover .overlay {
+}
+
+.image-container:hover .overlay {
     opacity: 1;
-  }
-  
-  .a {
+}
+
+.a {
     color: white;
 }
-  .overlay-content {
+
+.overlay-content {
     font-size: 3vh;
     color: white;
     text-align: center;
-  }
-  
+}
 
-.overlay
-{display: flex;
-    justify-content: center; 
-    align-items: center; }
+
+.overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .brand {
     font-family: Lato, sans-serif;
@@ -531,21 +554,22 @@ span.text {
 }
 
 
-.overlay-content{
+.overlay-content {
     font-size: 3vh;
-    
+
 }
 
 
-.overlay
-{display: flex;
-    justify-content: center; 
-    align-items: center; }
+.overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
- /*-------------------slider for schools*/
+/*-------------------slider for schools*/
 
 
- .slider {
+.slider {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -560,9 +584,9 @@ span.text {
     transition: 0.4s;
     position: relative;
     background-color: rgba(0, 0, 0, 0.3);
-  }
-  
-  .slider::before {
+}
+
+.slider::before {
     content: "";
     position: absolute;
     top: 0;
@@ -570,41 +594,42 @@ span.text {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
-  }
-  
-  .slider-container {
+}
+
+.slider-container {
     position: relative;
-  }
-  
-  .slide {
+}
+
+.slide {
     /* Rest of your slide styles */
-  }
-  
-  .arrow {
+}
+
+.arrow {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     z-index: 2;
     /* Rest of your arrow styles */
-  }
-  
-  .left-arrow {
+}
+
+.left-arrow {
     left: 20px;
-    z-index: 3; /* Adjusted z-index */
-  }
-  
-  .right-arrow {
+    z-index: 3;
+    /* Adjusted z-index */
+}
+
+.right-arrow {
     right: 20px;
-    z-index: 3; /* Adjusted z-index */
-  }
-  
-  .arrow i {
-    transform: rotate(180deg)}
+    z-index: 3;
+    /* Adjusted z-index */
+}
+
+.arrow i {
+    transform: rotate(180deg)
+}
 
 /*-------------------pupil stories */
 
-.img-fluid
-{
-   border-radius: 10px; 
+.img-fluid {
+    border-radius: 10px;
 }
-
