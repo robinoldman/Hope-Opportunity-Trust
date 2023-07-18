@@ -30,9 +30,14 @@ body {
 /*------------------hero*/
 
 .intro-container {
-    padding-top: 50px;
+    padding-top: 35px;
     padding-left: 70px;
     padding-right: 70px;
+}
+
+.intro-container h2 {
+    text-align: center;
+    padding-bottom: 20px;
 }
 
 .writing-container {
@@ -307,6 +312,8 @@ span.text {
 
 .container_students {
     display: flex;
+    padding-left: 50px;
+    padding-right: 50px;
 
     background-position: center;
 
@@ -314,6 +321,16 @@ span.text {
     align-items: center;
 
 
+}
+
+.student-intro-container {
+    padding-top: 35px;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-bottom: 50px;
+    font-size: 22px;
+    text-align: center;
+    color: #555;
 }
 
 .student-title {
@@ -463,6 +480,22 @@ span.text {
         height: 100vh;
     }
 
+}
+
+/*-----------------teams*/
+
+.teams-container {
+    font-family: Lato;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    font-size: 20px;
+}
+
+.title {
+    text-align: center;
+    margin-top: 30px;
 }
 
 /*-----------------4 panets on home page*/
