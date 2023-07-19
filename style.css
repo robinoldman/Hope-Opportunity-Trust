@@ -27,6 +27,22 @@ body {
     background-color: #000;
 }
 
+.logo-image {
+    display: flex;
+    height: 60px;
+    width: 60px;
+    /* Adjust the height as needed */
+
+    /* Adjust the width as needed */
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    /* Align items horizontally in the center */
+    align-items: center;
+}
+
 /*------------------hero*/
 
 .intro-container {
@@ -85,7 +101,7 @@ body {
 
 .nav {
     position: fixed;
-    background-color: #222;
+    background-color: white;
     font-size: 15px;
     top: 0;
     left: 0;
@@ -118,7 +134,7 @@ body {
 }
 
 .nav a {
-    color: #fff;
+    color: #000000;
     text-decoration: none;
     padding: 3px 10px;
     transition: all 0.3s ease-in-out;
@@ -353,6 +369,7 @@ span.text {
 .panel.active .button-card {
     visibility: visible;
     z-index: 3;
+    margin-top: 200px;
 }
 
 
@@ -387,6 +404,21 @@ span.text {
     overflow: active;
     text-align: justify;
 
+
+}
+
+.panel h2 {
+    font-size: 40px;
+    position: absolute;
+    top: 20px;
+    left: 15px;
+    right: 15px;
+    margin: 0;
+    opacity: 0;
+    z-index: 3;
+    padding: 20px;
+    overflow: active;
+    text-align: justify;
 
 }
 
@@ -429,6 +461,9 @@ span.text {
     opacity: 1;
 }
 
+.panel.active h2 {
+    opacity: 1;
+}
 
 .panel.active h4 {
     opacity: 1;
