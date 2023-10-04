@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
 
 * {
     box-sizing: border-box;
 }
 
 body {
-    font-family: Lato, sans-serif;
+    font-family: 'Lato';
     padding-bottom: 50px;
     margin: 0;
     padding-top: 60px;
@@ -42,7 +43,72 @@ body {
     justify-content: center;
     /* Align items horizontally in the center */
     align-items: center;
+    height: 60px;
+    /* Add this line */
 }
+
+/* Styling for the burger menu icon */
+.burger-menu {
+    display: none;
+    /* Initially hide the burger menu on larger screens */
+    cursor: pointer;
+    padding: 10px;
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: #000;
+    margin: 5px 0;
+    transition: 0.4s;
+}
+
+/* Styling for the navigation links */
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+/* Show burger menu on smaller screens */
+@media screen and (max-width: 768px) {
+    .burger-menu {
+        display: block;
+    }
+
+    /* Hide navigation links by default on smaller screens */
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        background-color: #fff;
+        width: 100%;
+        top: 60px;
+        /* Adjust this value based on your header height */
+        left: 0;
+        z-index: 1;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+}
+
 
 /*------------------hero*/
 
@@ -50,14 +116,35 @@ body {
     padding-top: 35px;
     padding-left: 70px;
     padding-right: 70px;
+    font-family: 'Lato';
 }
 
 .intro-container h2 {
     text-align: center;
     padding-bottom: 20px;
+    color: #1daee2;
+    font-family: 'Lato';
 }
 
 .writing-container1 {
+    font-family: 'Lato';
+    font-size: 20px;
+    color: #393939;
+
+
+
+    margin-top: 30px;
+
+}
+
+.writing-container h2 {
+    text-align: center;
+    padding-bottom: 20px;
+    color: #1daee2;
+    font-family: 'Lato';
+}
+
+.writing-container {
     font-family: Lato;
     font-size: 20px;
     color: #393939;
@@ -66,6 +153,22 @@ body {
 
     margin-top: 30px;
 
+}
+
+.title {
+    color: #1daee2;
+}
+
+.writing-container h4 {
+    color: #1daee2;
+}
+
+.writing-container1 h4 {
+    color: #1daee2;
+}
+
+.writing-container2 h1 {
+    color: #1daee2;
 }
 
 .picture-container {
@@ -79,6 +182,10 @@ body {
 }
 
 .container h5 {
+    text-align: justify;
+}
+
+.container_content h5 {
     text-align: justify;
 }
 
@@ -105,6 +212,7 @@ body {
 .writing-container h1 {
     margin-bottom: 40px;
     text-align: center;
+    color: #1daee2;
 }
 
 .picture-container1 {
@@ -150,12 +258,14 @@ body {
 
 }
 
+
 .nav .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 5px 0;
     transition: ease-in-out;
+    text-align: center;
 
 }
 
@@ -173,10 +283,15 @@ body {
 }
 
 .nav a {
-    color: #000000;
+    color: black;
     text-decoration: none;
     padding: 3px 10px;
     transition: all 0.3s ease-in-out;
+}
+
+.nav a h1 {
+    color: #1daee2;
+    ;
 }
 
 .nav.active {
@@ -199,17 +314,17 @@ body {
 
 .hero {
     background-image: url('./images/hero8.jpg');
-    height: 70vh;
-    background-repeat: no-repeat;
     background-size: cover;
-    background-position: bottom center;
-    color: #fff;
+    background-position: center center;
+    height: 70vh;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     text-align: center;
-    position: relative;
-    margin-bottom: 20px;
+    color: #fff;
+    /* Set text color to be visible on the background */
+    padding: 20px;
+
     z-index: -2;
 
 
@@ -219,9 +334,10 @@ body {
     content: '';
     position: absolute;
     top: 0;
+    height: 70vh;
     left: 0;
     width: 100%;
-    height: 100%;
+
     background-color: rgba(0, 0, 0, 0.4);
     z-index: -1;
 }
