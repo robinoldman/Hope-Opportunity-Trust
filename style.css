@@ -68,6 +68,32 @@ body {
 
 }
 
+.picture-container {
+    max-width: 500px;
+    /* Adjust the width as per your preference */
+    height: auto;
+}
+
+.container h1 {
+    justify-content: center;
+}
+
+.container h5 {
+    text-align: justify;
+}
+
+.writing-container2 {
+    font-family: Lato;
+    font-size: 20px;
+    color: #393939;
+    text-align: center;
+
+
+
+    margin-top: 30px;
+
+}
+
 .writing-container {
     font-family: Lato;
 
