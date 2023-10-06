@@ -38,14 +38,21 @@ body {
     /* Adjust the width as needed */
 }
 
-.logo {
-    display: flex;
-    justify-content: center;
-    /* Align items horizontally in the center */
-    align-items: center;
-    height: 60px;
-    /* Add this line */
+/* Reset logo size */
+.custom-logo {
+    height: 55px;
+    width: 90px;
 }
+
+/* Style for the "HOT" text */
+.logo-text {
+    font-size: 24px;
+    /* Adjust the font size as needed */
+    margin-left: 10px;
+    /* Add spacing between logo and text */
+}
+
+
 
 /* Styling for the burger menu icon */
 .burger-menu {
@@ -55,13 +62,7 @@ body {
     padding: 10px;
 }
 
-.bar {
-    width: 30px;
-    height: 3px;
-    background-color: #000;
-    margin: 5px 0;
-    transition: 0.4s;
-}
+
 
 /* Styling for the navigation links */
 .nav-links {
@@ -81,32 +82,42 @@ body {
     font-weight: bold;
 }
 
-/* Show burger menu on smaller screens */
-@media screen and (max-width: 768px) {
-    .burger-menu {
-        display: block;
-    }
 
-    /* Hide navigation links by default on smaller screens */
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        background-color: #fff;
-        width: 100%;
-        top: 60px;
-        /* Adjust this value based on your header height */
-        left: 0;
-        z-index: 1;
-    }
 
-    .nav-links.show {
-        display: flex;
-    }
 
-    .nav-links li {
-        margin: 10px 0;
-    }
+/* Hide the links inside the navigation menu (except for logo/home) */
+.nav #myLinks {
+    display: none;
+}
+
+/* Style navigation menu links */
+.nav a {
+    color: #4389b1;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+
+}
+
+/* Style the hamburger menu */
+.nav a.icon {
+
+    display: block;
+
+    right: 0;
+    top: 0;
+}
+
+/* Add a grey background color on mouse-over */
+.nav a:hover {
+
+    color: black;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+    background-color: #04AA6D;
+    color: white;
 }
 
 
@@ -179,6 +190,7 @@ body {
 
 .container h1 {
     justify-content: center;
+    color: #1daee2;
 }
 
 .container h5 {
@@ -246,6 +258,8 @@ body {
     justify-content: center;
 }
 
+
+
 .nav {
     position: fixed;
     background-color: white;
@@ -257,6 +271,10 @@ body {
     z-index: 4;
 
 }
+
+
+
+
 
 
 .nav .container {
@@ -305,15 +323,17 @@ body {
 }
 
 #student {
-    background-image: url('./images/hero8.jpg');
+    background-image: url('./images/hero9.jpg');
 }
 
 .nav.active a {
     color: #000;
 }
 
+
+
 .hero {
-    background-image: url('./images/hero8.jpg');
+    background-image: url('./images/hero9.jpg');
     background-size: cover;
     background-position: center center;
     height: 70vh;

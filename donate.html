@@ -12,16 +12,10 @@
         @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
     </style>
     <script src="https://kit.fontawesome.com/f012b4df15.js" crossorigin="anonymous"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const burgerMenu = document.getElementById("burger-menu");
-            const navLinks = document.querySelector(".nav-links");
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-            burgerMenu.addEventListener("click", function () {
-                navLinks.classList.toggle("show");
-            });
-        });
-    </script>
+
 
 
     <title>Hope Oportunity Trust</title>
@@ -31,20 +25,19 @@
     <nav class="nav">
         <div class="container">
             <a href="./index.html" class="logo-image">
-                <img src="./images/logohope.png" alt="">
+                <img src="./images/logohope.png" alt="" class="custom-logo">
             </a>
-            <h1><a class="logo" href="/index.html">HOT</a></h1>
-            <div class="burger-menu" id="burger-menu">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
+
+            <!-- Navigation links (hidden by default) -->
+            <div id="myLinks">
+                <a href="./index.html">Home</a>
+                <a href="./donate.html">Donate</a>
+                <a href="./team.html">Our Team</a>
             </div>
-            <ul class="nav-links">
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./donate.html">donate</a></li>
-                <li><a href="#">Services</a></li>
-                <!-- Add more menu items as needed -->
-            </ul>
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
         </div>
 
     </nav>
@@ -58,42 +51,50 @@
             offer a path to success for these promising young minds. Join us in making a difference today by sending us
             a request underneath and we will get back to you very soon.</h5>
         <br><br>
-        <form class=" row g-3" action="https://formsubmit.co/cb8e2e0cbd9b89dfb6bce5d4f36069e0" method="POST">
-            <input type="text" name="_honey" style="display: none;">
-            <input type="hidden" name="_captcha" value="false">
+        <div class="container mt-5">
+            <div class="row">
+                <!-- Left Column (Form) -->
+                <div class="col-md-6">
+                    <form class="row g-3" action="https://formsubmit.co/cb8e2e0cbd9b89dfb6bce5d4f36069e0" method="POST">
+                        <input type="text" name="_honey" style="display: none;">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next"
+                            value="https://8000-robinoldman-hopeopportu-4bbdq6r0law.ws-eu105.gitpod.io/success.html">
 
-            <input type="hidden" name="_next"
-                value="https://8000-robinoldman-hopeopportu-4bbdq6r0law.ws-eu105.gitpod.io/success.html">
-            <div class="col-md-6">
-                <label for="firstName" class="form-label">First Name</label>
-                <input type="text" class="form-control" name="first name" id="firstName" required>
-            </div>
-            <div class="col-md-6">
-                <label for="lastName" class="form-label">Last Name</label>
-                <input type="text" class="form-control" name="lastName" id="lastName" required>
-            </div>
-            <div class="col-md-6">
-                <label for="email" class="form-label">Email</label>
-                <input type="text" class="form-control" name="email" id="email" required>
-            </div>
-            <div class="col-md-6">
-                <label for="comments" class="form-label">Comments</label>
-                <textarea type="text" class="form-control" name="comments" id="comments" rows="3" required></textarea>
+                        <div class="col-md-12">
 
-            </div>
-            <div class="col-md-12">
-                <button type="submit" class="btn btn-primary">submit</button>
-            </div>
+                            <input type="text" class="form-control" placeholder="Enter your first name"
+                                name="first name" id="firstName" required>
+                        </div>
+                        <div class="col-md-12">
+                            <input type="text" class="form-control" name="lastName" placeholder="Enter your username"
+                                id="lastName" required>
+                        </div>
+                        <div class="col-md-12">
+                            <input type="text" class="form-control" name="email" placeholder="Enter your email"
+                                id="email" required>
+                        </div>
+                        <div class="col-md-12">
+                            <textarea type="text" class="form-control" name="comments"
+                                placeholder="Write any comments, questions, or requests" id="comments" rows="3"
+                                required></textarea>
+                        </div>
+                        <div class="col-md-12">
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                    </form>
+                </div>
 
-            <div class="col-12 d-flex align-items-center justify-content-center text-center">
-                <div class="picture-container">
-                    <img src="https://images.pexels.com/photos/3768126/pexels-photo-3768126.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                        alt="third-image" class="img-fluid smaller-image">
+                <!-- Right Column (Picture) -->
+                <div class="col-md-6 d-flex align-items-center justify-content-center text-center">
+                    <div class="picture-container">
+                        <img src="https://images.pexels.com/photos/3768126/pexels-photo-3768126.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                            alt="third-image" class="img-fluid smaller-image">
+                    </div>
                 </div>
             </div>
+        </div>
 
-
-        </form>
 
 
     </div>
