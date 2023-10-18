@@ -330,6 +330,10 @@ body {
     color: #000;
 }
 
+#title {
+    color: white;
+}
+
 .nav {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -489,6 +493,12 @@ span.text {
         width: 26vim;
         font-size: 12px;
     }
+
+    .container-school1 {
+        height: 26vmin;
+        width: 26vim;
+        font-size: 12px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -499,6 +509,12 @@ span.text {
     }
 
     .container-school {
+        height: 30vmin;
+        width: calc(50% - 40px);
+        font-size: 14px;
+    }
+
+    .container-school1 {
         height: 30vmin;
         width: calc(50% - 40px);
         font-size: 14px;
@@ -515,6 +531,14 @@ span.text {
         width: 100%;
         font-size: 8px;
     }
+
+    .container-school1 {
+        height: 25vmin;
+        width: 100%;
+        font-size: 8px;
+    }
+
+
 }
 
 /*-------------------cards for students*/
