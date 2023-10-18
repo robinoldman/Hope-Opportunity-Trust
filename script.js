@@ -52,3 +52,21 @@ function myFunction() {
         x.style.display = "block";
     }
 }
+
+function toggleMenu() {
+    var x = document.getElementById("menu");
+    x.classList.toggle("show");
+
+    // Get the content element and toggle the class
+    var content = document.getElementById("content");
+    content.classList.toggle("menu-open");
+}
+
+function toggleMenu() {
+    var x = document.getElementById("menu");
+    x.classList.toggle("show");
+
+    // Get the content element and toggle the class
+    var content = document.getElementById("content1");
+    content.classList.toggle("menu-open");
+}
