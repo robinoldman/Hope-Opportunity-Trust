@@ -19,13 +19,8 @@ valueDisplays.forEach((valueDisplay, index) => {
     let endValue = parseInt(valueDisplay.getAttribute('data-val'));
     let duration = Math.max(50, Math.floor(interval / Math.abs(endValue - startValue)));
 
-    // Decrease the duration and increase step size for the last counter
-    if (index === valueDisplays.length - 1) {
-        duration = 1; // 1 millisecond
-        endValue = 4000000; // Set the final value directly
-    }
-
-    let step = Math.ceil((endValue - startValue) / (interval / duration));
+    // Adjust the step size for the last counter to make bigger jumps
+    let step = index === valueDisplays.length - 1 ? 100000 : Math.ceil((endValue - startValue) / (interval / duration));
 
     let counter = setInterval(function () {
         startValue += step;
@@ -36,6 +31,7 @@ valueDisplays.forEach((valueDisplay, index) => {
         valueDisplay.textContent = startValue;
     }, duration);
 });
+
 
 
 
