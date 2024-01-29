@@ -15,6 +15,10 @@ body {
 
 }
 
+.background1 {
+    background-color: #fbfbfb;
+}
+
 .narrow-hr-container {
     display: flex;
     justify-content: center;
@@ -104,8 +108,7 @@ body {
 
     display: block;
 
-    right: 0;
-    top: 0;
+
 }
 
 /* Add a grey background color on mouse-over */
@@ -128,6 +131,7 @@ body {
     padding-left: 70px;
     padding-right: 70px;
     font-family: 'Lato';
+    background-color: #fbfbfb;
 }
 
 .intro-container h2 {
@@ -296,8 +300,8 @@ body {
 
 .nav a.current,
 .nav a:hover {
-    color: red;
-    font-weight: bold;
+    color: #7ae0ff;
+
 }
 
 .nav a {
@@ -691,17 +695,33 @@ span.text {
     opacity: 1;
 }
 
-@media (max-width: 480px) {
-    .container_students {
-        width: 100vw;
-    }
 
-    .panel:nth-of-type(4),
-    .panel:nth-of-type(5) {
-
+@media (min-width: 780px) {
+    .students-small {
         display: none;
     }
+
 }
+
+@media (max-width: 780px) {
+    .container_students {
+        display: none;
+
+    }
+
+    .intro-container {
+
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .student-intro-container {
+        padding-left: 20px;
+        padding-right: 20px
+    }
+
+}
+
 
 @media (max-width: 1100px) {
     .panel h3 {
