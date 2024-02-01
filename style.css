@@ -512,6 +512,15 @@ span.text {
         gap: 30px;
     }
 
+    #content1 {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .picture-removal {
+        display: none;
+    }
+
     .container-school {
         height: 30vmin;
         width: calc(50% - 40px);
